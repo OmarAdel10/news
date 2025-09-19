@@ -81,6 +81,11 @@ class Apptheme {
         fontWeight: FontWeightManager.fw500,
         color: black,
       ),
+      titleLarge: TextStyle(
+        fontSize: FontManager.f20,
+        fontWeight: FontWeightManager.fw700,
+        color: black,
+      ),
       titleMedium: TextStyle(
         fontSize: FontManager.f16,
         fontWeight: FontWeightManager.fw700,
@@ -169,6 +174,11 @@ class Apptheme {
       headlineSmall: TextStyle(
         fontSize: FontManager.f24,
         fontWeight: FontWeightManager.fw500,
+        color: white,
+      ),
+      titleLarge: TextStyle(
+        fontSize: FontManager.f20,
+        fontWeight: FontWeightManager.fw700,
         color: white,
       ),
       titleMedium: TextStyle(

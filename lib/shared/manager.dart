@@ -18,6 +18,9 @@ class AssetsManager {
   static const String technologyLight = 'assets/images/technology_light.png';
   static const String technologyDark = 'assets/images/technology_dark.png';
   static const String mockupNewsImage = 'assets/images/mockup_news_image.png';
+  
+  
+  static const String themeIcon = 'assets/icons/theme_icon.svg';
 }
 
 class FontManager {

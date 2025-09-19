@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/home/view/widgets/custom_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String routeName = 'home';
@@ -6,6 +7,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+      drawer: CustomDrawer());
   }
 }
