@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/shared/manager.dart';
+import 'package:news/shared/constants/manager.dart';
 
 class Apptheme {
   static Color backgroundDark = Color(0xFF171717);

@@ -37,4 +37,5 @@ class FontWeightManager {
 
 class RadiusManager {
   static const double r16 = 16;
+  static const double r24 = 24;
 }

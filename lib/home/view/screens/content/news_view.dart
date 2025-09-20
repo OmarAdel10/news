@@ -1,0 +1,10 @@
+import 'package:flutter/cupertino.dart';
+
+class NewsView extends StatelessWidget {
+  const NewsView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}

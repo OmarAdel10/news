@@ -3,8 +3,8 @@ import 'dart:developer';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news/home/data/models/language_model.dart';
-import 'package:news/shared/apptheme.dart';
-import 'package:news/shared/manager.dart';
+import 'package:news/shared/constants/apptheme.dart';
+import 'package:news/shared/constants/manager.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
