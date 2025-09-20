@@ -2,12 +2,14 @@ import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:news/home/data/models/category_model.dart';
 import 'package:news/home/data/models/language_model.dart';
 import 'package:news/shared/constants/apptheme.dart';
 import 'package:news/shared/constants/manager.dart';
 
 class CustomDrawer extends StatelessWidget {
-  const CustomDrawer({super.key});
+  final VoidCallback resetSelectedCategory;
+  const CustomDrawer({super.key, required this.resetSelectedCategory});
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,10 @@ class CustomDrawer extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16),
             child: GestureDetector(
-              onTap: () {},
+              onTap: () {
+                resetSelectedCategory();
+                Navigator.of(context).pop();
+              },
               child: Row(
                 children: [
                   Icon(CupertinoIcons.home, color: Apptheme.white, size: 24),
@@ -148,8 +153,10 @@ class CustomDrawer extends StatelessWidget {
               value: _currentLanguageCode,
               items: language
                   .map(
-                    (language) =>
-                        DropdownMenuItem(value: language.code, child: Text(language.name)),
+                    (language) => DropdownMenuItem(
+                      value: language.code,
+                      child: Text(language.name),
+                    ),
                   )
                   .toList(),
               onChanged: (String? newVal) {
