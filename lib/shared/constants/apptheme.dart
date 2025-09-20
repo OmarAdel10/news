@@ -6,6 +6,7 @@ class Apptheme {
   static Color backgroundLight = Color(0xFFFFFFFF);
   static Color white = Color(0xFFFFFFFF);
   static Color black = Color(0xFF171717);
+  static Color grey = Color(0xFFA0A0A0);
 
   static ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: backgroundLight,
@@ -44,7 +45,10 @@ class Apptheme {
       suffixIconColor: black,
     ),
 
-    drawerTheme: DrawerThemeData(backgroundColor: backgroundLight, elevation: 5),
+    drawerTheme: DrawerThemeData(
+      backgroundColor: backgroundLight,
+      elevation: 5,
+    ),
 
     bottomSheetTheme: BottomSheetThemeData(
       modalBackgroundColor: black,
@@ -96,6 +100,11 @@ class Apptheme {
         fontWeight: FontWeightManager.fw500,
         color: black,
       ),
+      labelMedium: TextStyle(
+        fontSize: FontManager.f12,
+        fontWeight: FontWeightManager.fw500,
+        color: grey,
+      ),
     ),
   );
 
@@ -117,15 +126,15 @@ class Apptheme {
     inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(RadiusManager.r16),
-        borderSide: BorderSide(color: white)
+        borderSide: BorderSide(color: white),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(RadiusManager.r16),
-        borderSide: BorderSide(color: white)
+        borderSide: BorderSide(color: white),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(RadiusManager.r16),
-        borderSide: BorderSide(color: white)
+        borderSide: BorderSide(color: white),
       ),
       hintStyle: TextStyle(
         fontSize: FontManager.f20,
@@ -136,10 +145,7 @@ class Apptheme {
       suffixIconColor: white,
     ),
 
-    drawerTheme: DrawerThemeData(
-      backgroundColor: backgroundDark,
-      elevation: 5,
-    ),
+    drawerTheme: DrawerThemeData(backgroundColor: backgroundDark, elevation: 5),
 
     bottomSheetTheme: BottomSheetThemeData(
       modalBackgroundColor: white,
@@ -191,6 +197,11 @@ class Apptheme {
         fontWeight: FontWeightManager.fw500,
         color: white,
       ),
-    )
+      labelMedium: TextStyle(
+        fontSize: FontManager.f12,
+        fontWeight: FontWeightManager.fw500,
+        color: grey,
+      ),
+    ),
   );
 }

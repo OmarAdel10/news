@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:news/home/view/screens/content/categories_view.dart';
-// import 'package:news/home/view/screens/content/news_screen.dart';
+import 'package:news/news/view/screens/news_view.dart';
 import 'package:news/home/view/widgets/custom_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,8 +9,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // List<Widget> content = [CategoriesScreen(), NewsScreen()];
-    // int _currentScreen = 0;
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
@@ -20,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       drawer: CustomDrawer(),
-      body: CategoriesView(),
+      body: NewsView(),
     );
   }
 }

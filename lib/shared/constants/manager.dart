@@ -24,6 +24,7 @@ class AssetsManager {
 }
 
 class FontManager {
+  static const double f12 = 12;
   static const double f14 = 14;
   static const double f16 = 16;
   static const double f20 = 20;
@@ -36,6 +37,7 @@ class FontWeightManager {
 }
 
 class RadiusManager {
+  static const double r8 = 8;
   static const double r16 = 16;
   static const double r24 = 24;
 }
